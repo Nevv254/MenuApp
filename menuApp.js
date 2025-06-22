@@ -1,9 +1,9 @@
 const prompt = require('prompt-sync')({ sigint: true });
 
-// Counter to track how many actions the user performs
+// Counter to track actions
 let actionCount = 0;
 
-// Function to return current date and time as a string
+// Function for current date and time as a string
 function timestamp() {
     return new Date().toLocaleString();
 }
@@ -17,8 +17,7 @@ function greetUser() {
 
 // Tell a programming joke
 function tellJoke() {
-    console.log(`[${timestamp()}] I asked my code to commit.
-It ghosted me. `);
+    console.log(`[${timestamp()}] I asked my code to commit. It ghosted me. `);
 }
 
 // Show the current time
@@ -94,6 +93,11 @@ function countDown() {
     }
 }
 
+// Secret Option (42): Easter egg
+function secretOption() {
+    console.log(`[${timestamp()}]  Welcome to the secret realm! Congratulations You've unlocked Easter Egg `);
+}
+
 // Exit the program
 function exitProgram() {
     console.log(`\nYou performed ${actionCount} action(s).`);
@@ -149,6 +153,9 @@ function main() {
                 break;
             case "9":
                 countDown();
+                break;
+            case "42":
+                secretOption(); // Easter egg
                 break;
             case "10":
                 exitProgram();
