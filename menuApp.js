@@ -95,7 +95,7 @@ function countDown() {
 
 // Secret Option (42): Easter egg
 function secretOption() {
-    console.log(`[${timestamp()}]  Welcome to the secret realm! Congratulations You've unlocked the Easter Egg!! `);
+    console.log(`[${timestamp()}] Congratulations You've unlocked the Easter Egg!! `);
 }
 
 // Exit the program
