@@ -114,3 +114,52 @@ function showMenu() {
     console.log("9. Count Down from a Number");
     console.log("10. Exit");
 }
+
+// Continuously show the menu until the user chooses to exit
+function main() {
+    while (true) {
+        showMenu(); // Display options
+        const choice = prompt("Enter your choice (1-10): ");
+
+        //  using a switch statement
+        switch (choice) {
+            case "1":
+                greetUser();
+                break;
+            case "2":
+                tellJoke();
+                break;
+            case "3":
+                showCurrentTime();
+                break;
+            case "4":
+                reverseWord();
+                break;
+            case "5":
+                checkEvenOdd();
+                break;
+            case "6":
+                squareNumber();
+                break;
+            case "7":
+                repeatPhrase();
+                break;
+            case "8":
+                celsiusToFahrenheit();
+                break;
+            case "9":
+                countDown();
+                break;
+            case "10":
+                exitProgram();
+                break;
+            default:
+                console.log("Invalid option. Please choose a number from 1 to 10.");
+                continue; // Skip incrementing actionCount for invalid input
+        }
+
+        actionCount++; // Tracking successful actions
+    }
+}
+
+main();
