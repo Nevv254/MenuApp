@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')({ sigint: true });
 
-// Counter to track actions
+// Action Counter 
 let actionCount = 0;
 
 // Function for current date and time as a string
@@ -95,7 +95,7 @@ function countDown() {
 
 // Secret Option (42): Easter egg
 function secretOption() {
-    console.log(`[${timestamp()}]  Welcome to the secret realm! Congratulations You've unlocked Easter Egg `);
+    console.log(`[${timestamp()}]  Welcome to the secret realm! Congratulations You've unlocked the Easter Egg!! `);
 }
 
 // Exit the program
@@ -165,7 +165,7 @@ function main() {
                 continue; // Skip incrementing actionCount for invalid input
         }
 
-        actionCount++; // Tracking successful actions
+        actionCount++; // Action counter
     }
 }
 
