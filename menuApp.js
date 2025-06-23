@@ -93,9 +93,9 @@ function countDown() {
     }
 }
 
-// Secret Option (42): Easter egg
+// Secret Option (77): Bonus round
 function secretOption() {
-    console.log(`[${timestamp()}] Congratulations You've unlocked the Easter Egg!! `);
+    console.log(`[${timestamp()}] Congratulations You've unlocked a bonus round!! `);
 }
 
 // Exit the program
@@ -154,8 +154,8 @@ function main() {
             case "9":
                 countDown();
                 break;
-            case "42":
-                secretOption(); // Easter egg
+            case "77":
+                secretOption(); // Bonus Round
                 break;
             case "10":
                 exitProgram();
